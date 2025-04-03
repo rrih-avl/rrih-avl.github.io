@@ -6,6 +6,7 @@
     --light-green-faded: #e8f2dd;
     --dark-green: #53843f;
     --dark-green-faded: #dfe7dd;
+    --darker-green: #3b463a;
     --blue: #272660;
     --orange: #f1a421;
     --white: #fbfbfc;
@@ -131,7 +132,8 @@ li:hover {
 #portal {
     padding: 1rem;
     color: var(--white);
-    background-color: var(--blue);
+    /*background-color: var(--blue);*/
+    background-color: var(--darker-green);
 }
 
 /* C O N T E N T   P A N E L S */
@@ -191,7 +193,7 @@ li:hover {
     background-color: var(--white);
     padding: 1rem;
     border-radius: 2rem;
-    border-color: #272660;
+    border-color: var(--darker-green);
     border-style: solid;
     border-width: 2px;
     transition: .2s;
@@ -216,18 +218,27 @@ li:hover {
     background-color: var(--dark-green-faded);
 }
 
+.darker-green {
+    background-color: var(--darker-green);
+}
+
 .blue {
     background-color: var(--blue);
     color: var(--white);
 }
 
-.blue-border {
+.green {
+    background-color: var(--darker-green);
+    color: var(--white);
+}
+
+.box-border {
     border-style: solid;
-    border-color: var(--blue);
+    border-color: var(--darker-green);
     border-width: 2px;
     border-radius: 1rem;
     background-color: var(--white);
-    color: var(--blue);
+    color: var(--darker-green);
     /*margin-top: -3rem;*/
     padding-right: var(--pad);
     padding-left: var(--pad);
@@ -294,6 +305,37 @@ li:hover {
 
 /*FOOTER*/
 /*---------------------------------------------------------*/
+#footer {
+    background-color: var(--darker-green);
+    height: 10rem;
+    width: 100vw;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 3;
+    font-size: var(--desc);
+}
+
+#footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: var(--pad);
+}
+
+#footer-general {
+    text-align: left;
+    margin-left: 0;
+    bottom: 0;
+}
+
+#footer-contact {
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 0;
+}
 
 /*LINKS*/
 /*---------------------------------------------------------*/
